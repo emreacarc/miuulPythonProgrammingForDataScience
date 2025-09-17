@@ -28,6 +28,48 @@ a.size
 a.dtype
 
 # Array reshaping
+np.random.randint(1, 99, size = 9),
+np.random.randint(1, 99, size = 9).reshape(3, 3)
+
+# Index seçimi
+array1 = np.random.randint(100, size = 7)
+array1[0]
+array1[0:5]
+
+array2 = np.random.randint(100, size = (3, 5))
+print(array2)
+array2[2, 0]
+array2[0, 2]
+array2[1, 1] = 999
+
+array2[0:2, 1:3]
+
+# Fancy index
+v = np.arange(0, 30, 3)
+catch = [2, 4, 5]
+
+v[catch]
+
+# Numpy'da koşullu işlemler
+v < 20 # array'deki elemanlar 20'den küçük mü sorgusunu yapar
+v[v < 20]  # array'de 20'den küçük elemanları alır
+v[v != 18] # array'de 18'e eşit olmayan elemanları alır.
+
+# Matematiksel işlemler
+
+v / 5
+v ** 2
+v - 1.2
+
+np.subtract(v, 10)
+np.add(v, 10)
+np.mean(v)
+np.sum(v)
+np.min(v)
+np.max(v)
+np.var(v)
+
+# np.linalg.solve(a, b) iki bilinmeyenli denklemleri çözmek için kullanılır.
 
 
 
